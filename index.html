@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- REMIZ ICON -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!---------------- ASIDE ---------------->
+      <aside>
+        <div class="top">
+          <a href="#" class="logo">
+            <img src="./images/logo.png" alt="Logo" />
+            <h2>LO<span class="danger">GO</span></h2>
+          </a>
+          <div class="close" id="close-btn">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="#">
+            <i class="ri-dashboard-fill"></i>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="#" class="active">
+            <i class="ri-user-fill"></i>
+            <h3>Customers</h3>
+          </a>
+          <a href="#">
+            <i class="ri-file-list-3-fill"></i>
+            <h3>Orders</h3>
+          </a>
+          <a href="#">
+            <i class="ri-line-chart-fill"></i>
+            <h3>Analytics</h3>
+          </a>
+          <a href="#">
+            <i class="ri-chat-1-fill"></i>
+            <h3>Messages</h3>
+          </a>
+          <a href="#">
+            <i class="ri-product-hunt-fill"></i>
+            <h3>Products</h3>
+          </a>
+          <a href="#">
+            <i class="ri-file-chart-fill"></i>
+            <h3>Reports</h3>
+          </a>
+          <a href="#">
+            <i class="ri-settings-2-fill"></i>
+            <h3>Settings</h3>
+          </a>
+          <a href="#">
+            <i class="ri-add-fill"></i>
+            <h3>Add Product</h3>
+          </a>
+          <a href="#">
+            <i class="ri-login-box-fill"></i>
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </aside>
+      <!---------------- FIN ASIDE ---------------->
+
+      <!---------------- MAIN ---------------->
+      <main>
+        <h1>Dashboard</h1>
+
+        <div class="date">
+          <input type="date" />
+        </div>
+
+        <!-- perspectivas -->
+        <div class="insights">
+          <!-- SALES -->
+          <div class="sales">
+            <i class="ri-line-chart-line"></i>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Sales</h3>
+                <h1>$25,024</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>81%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 24 Hour</small>
+          </div>
+          <!-- FIN SALES -->
+
+          <!-- EXPENSES -->
+          <div class="expenses">
+            <i class="ri-pie-chart-line"></i>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Expensess</h3>
+                <h1>$14,029</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>62%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 24 Hour</small>
+          </div>
+          <!-- FIN EXPENSES -->
+
+          <!-- INCOME -->
+          <div class="income">
+            <i class="ri-bubble-chart-line"></i>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Income</h3>
+                <h1>$26,081</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>51%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 24 Hour</small>
+          </div>
+          <!-- FIN INCOME -->
+        </div>
+        <!--fin perspectivas -->
+
+        <div class="recent-orders">
+          <h2>Recent Order</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Product Number</th>
+                <th>Payment</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Foldable Mini Drone</td>
+                <td>865655</td>
+                <td>Due</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+              </tr>
+              <tr>
+                <td>Foldable Mini Drone</td>
+                <td>865655</td>
+                <td>Due</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+              </tr>
+              <tr>
+                <td>Foldable Mini Drone</td>
+                <td>865655</td>
+                <td>Due</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+              </tr>
+              <tr>
+                <td>Foldable Mini Drone</td>
+                <td>865655</td>
+                <td>Due</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#">Show All</a>
+        </div>
+      </main>
+      <!---------------- FIN MAIN ---------------->
+
+      <!---------------- RIGHT ---------------->
+      <div class="right">
+        <div class="top">
+          <button id="menu-btn">
+            <i class="ri-menu-4-line"></i>
+          </button>
+          <div class="theme-toggler">
+            <i class="ri-sun-fill active"></i>
+            <i class="ri-moon-clear-fill"></i>
+          </div>
+          <div class="profile">
+            <div class="info">
+              <p>Hey, <b>Rody</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+            <div class="profile-photo">
+              <img src="./images/profile-2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- UPDATES -->
+        <div class="recent-updates">
+          <h2>Recent Updates</h2>
+          <div class="updates">
+            <div class="update">
+              <div class="profile-photo">
+                <img src="./images/profile-1.jpg" alt="" />
+              </div>
+              <div class="message">
+                <p>
+                  <b>Juan carlos</b> Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit.
+                </p>
+                <small class="text-muted">2 Minutes Ago</small>
+              </div>
+            </div>
+            <div class="update">
+              <div class="profile-photo">
+                <img src="./images/profile-3.jpg" alt="" />
+              </div>
+              <div class="message">
+                <p>
+                  <b>Carmen Loaiza</b> Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit.
+                </p>
+                <small class="text-muted">2 Minutes Ago</small>
+              </div>
+            </div>
+            <div class="update">
+              <div class="profile-photo">
+                <img src="./images/profile-4.jpg" alt="" />
+              </div>
+              <div class="message">
+                <p>
+                  <b>Martha Torres</b> Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit.
+                </p>
+                <small class="text-muted">2 Minutes Ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FIN UPDATES -->
+
+        <div class="sales-analytics">
+          <h2>Sales Analytics</h2>
+          <div class="item online">
+            <div class="icon">
+              <i class="ri-shopping-cart-fill"></i>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>ONLINE ORDERS</h3>
+                <small class="text-muted">Last 24 Hours</small>
+              </div>
+              <h5 class="success">+84%</h5>
+              <h3>3849</h3>
+            </div>
+          </div>
+
+          <div class="item offline">
+            <div class="icon">
+              <i class="ri-briefcase-4-fill"></i>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>OFFLINE ORDERS</h3>
+                <small class="text-muted">Last 24 Hours</small>
+              </div>
+              <h5 class="danger">-17%</h5>
+              <h3>9694</h3>
+            </div>
+          </div>
+
+          <div class="item customers">
+            <div class="icon">
+              <i class="ri-user-2-fill"></i>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>NEW CUSTOMERS</h3>
+                <small class="text-muted">Last 24 Hours</small>
+              </div>
+              <h5 class="success">+25%</h5>
+              <h3>6544</h3>
+            </div>
+          </div>
+
+          <div class="item add-product">
+            <div>
+              <i class="ri-add-box-line"></i>
+              <h3>Add Product</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---------------- RIGHT ---------------->
+    </div>
+
+    <!-- JS -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
